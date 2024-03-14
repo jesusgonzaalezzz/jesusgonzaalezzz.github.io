@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - BARCELONA UNIDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Se ha eliminado el texto "CONTACTA" -->
+        <div class="contact-info">
+            <!-- Se ha cambiado el enlace para ir a la página contact.html -->
+            <a href="contact.html" class="btn"><i class="far fa-envelope"></i> CONTACTO</a>
+            <a href="login.html" class="btn"><i class="fas fa-sign-in-alt"></i> LOGIN</a>
+            <a href="donaciones.html" class="btn"><i class="fas fa-donate"></i> DONAR</a>
+        </div>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo" width="100" height="100">
+                </a>
+                <h1>BARCELONA UNIDA</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">INICIO</a>
+                <a href="somos.html">SOMOS</a>
+                <a href="equipo.html">EQUIPO</a>
+                <a href="proyectos.html">PROYECTOS</a>
+                <a href="noticias.html">NOTICIAS</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>REGISTRO DE SESIÓN</h1>
+        <div class="register-form-container">
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="tratamiento">Tratamiento:</label>
+                    <select id="tratamiento" name="tratamiento" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="sr">Sr.</option>
+                        <option value="sra">Sra.</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ej:pepito@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="ej:937453912" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal">Código Postal:</label>
+                    <input type="text" id="postal" name="postal" placeholder="ej:08350" required>
+                </div>
+                <div class="form-group">
+                    <label for="cuota">Cuota Socio:</label>
+                    <input type="number" id="cuota" name="cuota" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        Aceptar términos y condiciones
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>¿Quieres recibir nuestros periódicos?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="recibo-si" name="recibo" value="si" required>
+                            Sí
+                        </label>
+                        <label>
+                            <input type="radio" id="recibo-no" name="recibo" value="no" required>
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+<footer>
+    <p>&copy; 2024 Barcelona Unida. Todos los derechos reservados.</p>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="contact.html">Contacto</a>
+    </nav>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
